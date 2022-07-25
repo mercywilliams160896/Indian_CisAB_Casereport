@@ -19,10 +19,10 @@ For ease of analysis the alignment and variant call files were subsetted (includ
 Raw sequencing outfiles (.fastq files - paired end). Samples underwent Whole Exome Sequencing (WES).
 <h3> Quality Control, Alignment and Variant Calling </h3>
 Read files were checked for their quality using FastQC and were subjected to alignment to reference genome (GRCh37/hg19) and variant calling using Illumina DRAGEN v3.4 Bio-IT platform <br/>
-<h5> <i>Commands used</i> <br/>
+<h5> <i>Commands used</i> </h5> <br/>
 <i>$ fastqc Sample_R1.fastq.gz</i> <br/>
 <i>$ fastqc Sample_R2.fastq.gz</i> <br/>
-<i>$ dragen -r {hg19 reference genome} -1 {Sample_R1.fastq.gz} -2 {Sample_R2.fastq.gz} --enable-variant-caller true --output-file-prefix {outfilename} --output-directory {outfilefolder}</i> </h5>
+<i>$ dragen -r {hg19 reference genome} -1 {Sample_R1.fastq.gz} -2 {Sample_R2.fastq.gz} --enable-variant-caller true --output-file-prefix {outfilename} --output-directory {outfilefolder}</i> 
 <h3> Variant annotation and filtering </h3>
 Compiled list of genetic variants were systematically annotated for their functional consequences from a range of computational tools using ANNOVAR
 <h5> <i>Commands used</i> <br/>
