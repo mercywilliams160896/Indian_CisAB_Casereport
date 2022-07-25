@@ -18,8 +18,8 @@ Read files were checked for their quality using FastQC and were subjected to ali
 <i>$ dragen -r {hg19 reference genome} -1 {Sample_R1.fastq.gz} -2 {Sample_R2.fastq.gz} --enable-variant-caller true --output-file-prefix {outfilename} --output-directory {outfilefolder}</i> </h5>
 <h3> Variant annotation and filtering </h3>
 Compiled list of genetic variants were systematically annotated for their functional consequences from a range of computational tools using ANNOVAR
-<h5> Commands used <br/>
-
+<h5> <i>Commands used</i> <br/>
+<i>$ table_annovar.pl {Sample.avinput} Annovar/humandb --buildver hg19 --outfile {outfilename-prefix} --protocol refGene,cytoBand,genomicSuperDups,dbnsfp33a,avsnp147,exac03,1000g2015aug_all --operation g,r,r,f,f,f,f --nastring NA  --otherinfo</i> <br/>
 <h3> VCF subsetting </h3>
 A smaller subset of the alignment (.bam) file comprising chromosome 9 information was created using SAMTOOLS. Similarly, variants spanning chromosome 9 were subsetted from the ouput VCF using bespoke AWK commands/scripts
 <h3> File preprocessing and variant phasing </h3>
