@@ -9,3 +9,5 @@ For ease of analysis the alignment and variant call files were subsetted (includ
 
 <h2>Steps followed in the analysis of data
 <h3> Input files
+<h3> Quality Control, Alignment and Variant Calling
+<h3> Variant annotation and filtering
