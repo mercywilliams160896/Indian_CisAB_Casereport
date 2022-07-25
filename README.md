@@ -11,8 +11,8 @@ For ease of analysis the alignment and variant call files were subsetted (includ
 <h3> Input files </h3>
 Raw sequencing outfiles (.fastq files - paired end). Samples underwent Whole Exome Sequencing (WES).
 <h3> Quality Control, Alignment and Variant Calling </h3>
-Read files were checked for their quality using FastQC and were subjected to alignment to reference genome (GRCh37/hg19) and variant calling using Illumina DRAGEN v3.4 Bio-IT platform
-<h5> Commands used - $fastqc Sample_R1.fastq.gz
+Read files were checked for their quality using FastQC and were subjected to alignment to reference genome (GRCh37/hg19) and variant calling using Illumina DRAGEN v3.4 Bio-IT platform\
+<h5> Commands used - $fastqc Sample_R1.fastq.gz\
                 $fastqc Sample_R2.fastq.gz
                 $dragen -r <hg19 reference genome> -1 <Sample_R1.fastq.gz> -2 <Sample_R2.fastq.gz> --enable-variant-caller true --output-file-prefix <outfilename> --output-directory <outfilefolder> </h5>
 <h3> Variant annotation and filtering </h3>
