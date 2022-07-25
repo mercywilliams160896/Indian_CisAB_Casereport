@@ -34,3 +34,9 @@ A smaller subset of the alignment (.bam) file comprising chromosome 9 informatio
 <i>$ awk -F'\t' '{if($1 == "chr9") print $0}' {Sample.vcf} > Sample_chr9.vcf</i> <br/>
 <h3> File preprocessing and variant phasing </h3>
 The subsetted vcf file was preprocessed to .ped and .map file formats using PLINK tool. The obtained PLINK output files were further used to perform variant phasing using SHAPEIT tool utilizing the publicly available refrence panel of haplotypes provided by the 1000 Genomes Project. THe files can be downloaded at https://mathgen.stats.ox.ac.uk/impute/impute_v2.html#reference
+<h5> <i>Commands used</i> <br/>
+<i>$ plink1.9 --vcf Sample_chr9.vcf --make-bed --out Sample_chr9</i> <br/>
+<i>$ plink1.9 --vcf Sample_chr9.vcf --recode --out Sample_chr9</i> <br/>
+<i>$ shapeit --input-ped Sample_chr9.ped Sample_chr9.map --input-map {1000GP_Phase3/genetic_map_chr7_combined_b37.txt} --input-ref .{1000GP_Phase3/1000GP_Phase3_chr8.hap.gz} {1000GP_Phase3/1000GP_Phase3_chr8.legend.gz} {1000GP_Phase3/1000GP_Phase3.sample} --output-max Sample_chr9_phased.haps Sample_chr9_phased.sample</i> <br/>
+<i>$ shapeit --input-ped Sample_chr9.ped Sample_chr9.map --input-map {1000GP_Phase3/genetic_map_chr7_combined_b37.txt} --input-ref {1000GP_Phase3/1000GP_Phase3_chr8.hap.gz} {1000GP_Phase3/1000GP_Phase3_chr8.legend.gz} {1000GP_Phase3/1000GP_Phase3.sample} --output-max Sample_chr9_phased.haps Sample_chr9_phased.sample --exclude-snp {output.snp.strand.exclude}
+
