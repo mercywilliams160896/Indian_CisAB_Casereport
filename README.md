@@ -8,9 +8,11 @@ For ease of analysis the alignment and variant call files were subsetted (includ
 
 
 <h2>Steps followed in the analysis of data
-<h3> Input files </h2>
+<h3> Input files </h3>
 Raw sequencing outfiles (.fastq files - paired end). Samples underwent Whole Exome Sequencing (WES).
-<h3> Quality Control, Alignment and Variant Calling </h2>
+<h3> Quality Control, Alignment and Variant Calling </h3>
 Read files were checked for their quality using FastQC and were subjected to alignment to reference genome (GRCh37/hg19) and variant calling using Illumina DRAGEN v3.4 Bio-IT platform
-<h3> Variant annotation and filtering </h2>
+<h3> Variant annotation and filtering </h3>
 Compiled list of genetic variants were systematically annotated for their functional consequences from a range of computational tools using ANNOVAR
+<h3> VCF subsetting </h3>
+A smaller subset of the alignment (.bam) file comprising chromosome 9 information was created using SAMTOOLS. Similarly, variants spanning chromosome 9 were subsetted from the ouput VCF using bespoke AWK commands/scripts
