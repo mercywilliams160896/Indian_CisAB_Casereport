@@ -8,3 +8,4 @@ For ease of analysis the alignment and variant call files were subsetted (includ
 
 
 <h2>Steps followed in the analysis of data
+<h3> Input files
