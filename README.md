@@ -6,7 +6,14 @@ The sample used in the study was subjected to whole exome sequencing. Computatio
 
 For ease of analysis the alignment and variant call files were subsetted (including chromosome 9 data exclusively). The subsetted files were further used to analyse the phasing of genetic variants using Plink and SHAPEIT tools. 
 
-
+<h2>Tools/Packages used for analysis</h2>
+1. FastQC
+2. Illumina DRAGEN Bio-IT platform
+3. ANNOVAR
+4. Samtools
+5. Awk scripting
+6. PLINK
+7. SHAPEIT <br/>
 <h2>Steps followed in the analysis of data
 <h3> Input files </h3>
 Raw sequencing outfiles (.fastq files - paired end). Samples underwent Whole Exome Sequencing (WES).
