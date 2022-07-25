@@ -8,7 +8,7 @@ For ease of analysis the alignment and variant call files were subsetted (includ
 
 
 <h2>Steps followed in the analysis of data
-<h3> Input files <h3\>
+<h3> Input files <\>
 Raw sequencing outfiles (.fastq files - paired end). Samples underwent Whole Exome Sequencing (WES).
 <h3> Quality Control, Alignment and Variant Calling
 Read files were checked for their quality using FastQC and were subjected to alignment to reference genome (GRCh37/hg19) and variant calling using Illumina DRAGEN v3.4 Bio-IT platform
