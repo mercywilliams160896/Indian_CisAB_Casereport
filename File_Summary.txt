@@ -1,0 +1,36 @@
+## BRIEF SUMMARY OF THE FILES PROVIDED IN THE FOLDER
+#####################################################
+
+## Alignment output files
+Purba.subset.bam - Alignment alignment file in binary (.bam) format
+Purba.subset.bam.bai - Bam index file
+
+#####################################################
+## Variant Call Files
+Purba_chr9.vcf.gz - Vcf file in compressed format
+16977_chr9_final.vcf - Uncompressed vcf file
+
+#####################################################
+## ANNOVAR variant annotation file
+Purba_ABO_multianno.txt - Functional annotation of filtered variants using a range of computational tools using ANNOVAR
+
+#####################################################
+## Plink output files
+Purba_S1_chr9.bed.map
+Purba_S1_chr9.bed.nosex
+Purba_S1_chr9.bed.ped
+
+#####################################################
+## SHAPIT output files
+Purba_chr9_details.snp.strand.exclude
+Purba_chr9_phased.haps
+Purba_chr9_phased.sample
+
+#####################################################
+## IGV read summary files
+chr9_136131315 - List of reads observed in IGV for variant chr9:136131315C>G
+chr9_136131592 - List of reads observed in IGV for variant chr9:136131592G>C
+chr9_136133506 - List of reads observed in IGV for variant chr9:136133506A>G
+chr9_136135238 - List of reads observed in IGV for variant chr9:136135238T>C
+chr9_136136770 - List of reads observed in IGV for variant chr9:136136770A>C
+chr9_136131315_and_chr9_136131592 - List of reads observed in IGV for variant chr9:136131315C>G and chr9:136131592G>C
