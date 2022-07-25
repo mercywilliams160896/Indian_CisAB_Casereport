@@ -16,3 +16,5 @@ Read files were checked for their quality using FastQC and were subjected to ali
 Compiled list of genetic variants were systematically annotated for their functional consequences from a range of computational tools using ANNOVAR
 <h3> VCF subsetting </h3>
 A smaller subset of the alignment (.bam) file comprising chromosome 9 information was created using SAMTOOLS. Similarly, variants spanning chromosome 9 were subsetted from the ouput VCF using bespoke AWK commands/scripts
+<h3> File preprocessing and variant phasing </h3>
+The subsetted vcf file was preprocessed to .ped and .map file formats using PLINK tool. The obtained PLINK output files were further used to perform variant phasing using SHAPEIT tool utilizing the publicly available refrence panel of haplotypes provided by the 1000 Genomes Project. THe files can be downloaded at https://mathgen.stats.ox.ac.uk/impute/impute_v2.html#reference
