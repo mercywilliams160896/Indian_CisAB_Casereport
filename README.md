@@ -7,4 +7,4 @@ The sample used in the study was subjected to whole exome sequencing. Computatio
 For ease of analysis the alignment and variant call files were subsetted (including chromosome 9 data exclusively). The subsetted files were further used to analyse the phasing of genetic variants using Plink and SHAPEIT tools. 
 
 
-Steps followed in the analysis of data
+<h2>Steps followed in the analysis of data
